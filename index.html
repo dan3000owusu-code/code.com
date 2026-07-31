@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CodeStart is a friendly place to learn the building blocks of web development.">
+    <title>CodeStart | Learn Web Development</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="brand-logo">
+                <span class="brand-logo-mark">C</span>
+                <span class="brand-name">Code<span>Start</span></span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation menu">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav id="primary-navigation" aria-label="Primary navigation">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#video">Video</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero section -->
+    <main id="main-content" tabindex="-1">
+        <section class="hero" id="home">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="badge">Start Learning Coding</span>
+
+                    <h1>Build Your First Website</h1>
+
+                    <p>
+                        Learn HTML for structure, CSS for design,
+                        and JavaScript for interaction.
+                    </p>
+
+                    <a href="#about" class="btn btn-primary">
+                        Start Learning
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">Ask a question</a>
+                </div>
+
+                <div class="hero-image">
+                    <img src="istockphoto-1221204861-612x612.jpg"
+                         alt="Developer writing code at a laptop">
+                </div>
+            </div>
+        </section>
+
+        <!-- About section -->
+        <section class="about container section" id="about">
+            <div class="section-heading">
+                <span class="eyebrow">Your first steps</span>
+                <h2>Learn by building things</h2>
+                <p>Start with the essentials, then use each skill in a small project you can be proud of.</p>
+            </div>
+            <div class="learning-grid">
+                <article class="learning-card">
+                    <span class="card-number">01</span>
+                    <h3>HTML structure</h3>
+                    <p>Give your pages meaning with headings, links, images, and accessible content.</p>
+                </article>
+                <article class="learning-card">
+                    <span class="card-number">02</span>
+                    <h3>CSS design</h3>
+                    <p>Shape a clear visual identity with layout, color, spacing, and responsive styles.</p>
+                </article>
+                <article class="learning-card">
+                    <span class="card-number">03</span>
+                    <h3>JavaScript interaction</h3>
+                    <p>Make your website respond to people with menus, forms, buttons, and useful feedback.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Video section -->
+        <section class="video-section section container" id="video" aria-labelledby="video-title">
+            <div class="section-heading">
+                <span class="eyebrow">Watch and learn</span>
+                <h2 id="video-title">A quick introduction to web development</h2>
+                <p>Watch the lesson, then try the practice projects below.</p>
+            </div>
+            <video class="lesson-video" controls preload="metadata" poster="istockphoto-1221204861-612x612.jpg">
+                <source src="Untitled.mp4" type="video/mp4">
+                Your browser does not support HTML video. Download the video to watch it offline.
+            </video>
+            <details class="video-transcript">
+                <summary>Read the video transcript</summary>
+                <p>In this lesson, you will learn how HTML creates structure, how CSS styles a page, and how JavaScript adds interaction.</p>
+            </details>
+        </section>
+
+        <!-- Services section -->
+        <section class="services section section-dark" id="services">
+            <div class="container split-section">
+                <div>
+                    <span class="eyebrow">Practice projects</span>
+                    <h2>Turn lessons into a portfolio</h2>
+                </div>
+                <div>
+                    <p>Build a profile page, portfolio, to-do list, and contact form. Every project gives you a new piece of code to understand and improve.</p>
+                    <a href="#contact" class="text-link">Get project ideas <span aria-hidden="true">&#8594;</span></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section class="contact section container" id="contact">
+            <div class="section-heading">
+                <span class="eyebrow">Stay connected</span>
+                <h2>Have a question?</h2>
+                <p>Send a message and keep your learning moving forward.</p>
+            </div>
+            <form class="contact-form" id="contact-form">
+                <p class="form-help" id="contact-help">All fields are required. We will not share your information.</p>
+                <label for="name">Your name</label>
+                <input id="name" name="name" type="text" autocomplete="name" aria-describedby="contact-help" required>
+                <label for="email">Email address</label>
+                <input id="email" name="email" type="email" autocomplete="email" aria-describedby="contact-help" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" aria-describedby="contact-help" required></textarea>
+                <button class="btn btn-primary" type="submit">Send message</button>
+                <p class="form-status" id="form-status" role="status" aria-live="polite" tabindex="-1"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <p><strong>CodeStart</strong> &mdash; build your way into the web.</p>
+            <a href="#home">Back to top <span aria-hidden="true">&#8593;</span></a>
+        </div>
+    </footer>
+
+    <!-- Connect JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>
